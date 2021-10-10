@@ -1,0 +1,181 @@
+
+.container{
+display:grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+grid-template-areas: "github github github github"
+"main search search search"
+"main box1 box2 box3"
+"main lastbox lastbox lastbox";
+grid-gap:0.2rem;
+}
+.github{
+background: rgb(16, 4, 56);
+color: white;
+grid-area: github;   
+height:6rem;
+    width: 100%;
+    text-align: center;
+}
+.h3{   
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 3px; 
+    position:relative;
+    top:2rem;
+}
+.profile{
+    height: 60px;
+    border-radius: 90%;
+    position: absolute;
+    top:1rem;
+    left:9rem;
+    background-color: white;
+}
+.main{
+grid-area: main;
+border-radius: 1.5rem;
+height: 35rem;
+    width: 20rem;
+    background: black;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.search{
+color: ivory;
+grid-area: search;
+background:black;
+height: 3rem;
+width: 36rem;
+border-radius:0.5rem;
+position: relative;
+top:3rem;
+left:8rem;
+
+}
+.search-text{
+    font-family: sans-serif;
+    margin-left: 1rem;
+}
+.box1{
+background: black;
+grid-area: box1;
+
+height: 9rem;
+width: 12rem;
+border-radius:0.5rem;
+position: relative;
+bottom:5rem;
+left:3rem;
+}
+.box2{
+    background:black;
+    grid-area: box2;
+    height: 9rem;
+width: 12rem;
+border-radius:0.5rem;
+position: relative;
+bottom:5rem;
+left:3rem;
+}
+.box3{
+background: black;
+grid-area: box3;
+height: 9rem;
+width: 12rem;
+border-radius:0.5rem;
+position: relative;
+bottom:5rem;
+left:3rem;
+}
+.lastbox{
+background-color: black;
+grid-area: lastbox;
+height: 11rem;
+width: 43rem;
+border-radius:0.5rem;
+position: relative;
+bottom: 4rem;
+left:3rem;
+}
+
+
+@media(max-width:500px){
+ .container{
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.4fr 0.4fr 2.5fr 1.2fr 1.2fr 1.2fr 1fr;
+     grid-template-areas: "github"
+     "search"
+     "main"
+     "box1"
+     "box2"
+     "box3"
+     "lastbox";
+ } 
+ .search{
+    color: ivory;
+    grid-area: search;
+    background:black;
+    height: 3rem;
+    width: 26rem;
+    border-radius:0.5rem;
+    position: relative;
+    top:2rem;
+    left:3rem;
+}
+.main{
+    grid-area: main;
+    border-radius: 1.5rem;
+    height: 26rem;
+        width: 25rem;
+        background: rgb(131, 131, 131);
+        border-radius: 1.5rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    .box1{
+    background: black;
+    grid-area: box1;
+    
+    height: 9rem;
+    width: 25rem;
+    border-radius:0.5rem;
+    position: relative;
+    top:1rem;
+    left:3rem;
+    }
+    .box2{
+        background: black;
+        grid-area: box2;
+        height: 9rem;
+    width: 25rem;
+    border-radius:0.5rem;
+    position: relative;
+    top:1rem;
+    left:3rem;
+    }
+    .box3{
+    background: black;
+    grid-area: box3;
+    height: 9rem;
+    width: 25rem;
+    border-radius:0.5rem;
+    position: relative;
+    top:1rem;
+    left:3rem;
+    }
+    .lastbox{
+    background-color: black;
+    grid-area: lastbox;
+    height: 11rem;
+    width: 25rem;
+    border-radius:0.5rem;
+    position: relative;
+    top:1rem;
+    left:3rem;
+    }
+}
